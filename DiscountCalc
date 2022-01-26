@@ -1,0 +1,18 @@
+
+public final class DiscountCalc {
+	private int cost;
+	private int items;
+	private int discount; 
+	public DiscountCalc(int cost,int items,int discount) {
+		this.cost=cost;
+		this.items=items;
+		this.discount=discount;
+				
+	}
+	public int CalcDis() {
+		cost=cost*items;
+		discount = (cost*discount)/100;
+		return (cost-discount);
+	}
+
+}
